@@ -31,7 +31,7 @@ pipeline {
 
                     // Read the download and upload specs:
                     //def downloadSpec = readFile 'jenkins-examples/pipeline-examples/resources/props-download.json'
-                    def uploadSpec = readFile 'jenkins-examples/pipeline-examples/resources/props-upload.json'
+                    def uploadSpec = readFile 'props-upload.json'
 
                     // Download files from Artifactory:
                     //def buildInfo1 = server.download spec: downloadSpec
