@@ -27,7 +27,7 @@ pipeline {
             steps {
                 script{
                     // Obtain an Artifactory server instance, defined in Jenkins --> Manage:
-                    def server = Artifactory.server SERVER_ID
+                    def server = Artifactory.server artifactory
 
                     // Read the download and upload specs:
                     //def downloadSpec = readFile 'jenkins-examples/pipeline-examples/resources/props-download.json'
